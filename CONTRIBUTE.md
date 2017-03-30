@@ -70,6 +70,19 @@ To be able to use any dataset locally for testing, download CSV file from the pr
 
 **Countries Rankings Dataset** - These data represent commonly accepted measures for raking Countries on variety of factors which affect the country's internal and external international perception of the country's rank relative the the rest of the World. | [CSV file](http://socr-dev.nursing.umich.edu:3000/datasets/Countries_Rankings.csv) | [SOCR Data description page](http://wiki.socr.umich.edu/index.php/SOCR_Data_2008_World_CountriesRankings)
 
+**Alzheimer's Disease (AD) Case Study Data** - The 1560 cases represent the neuropsychiatric (NP) and Imaging data for two Alzheimer's Disease (AD) sub-populations: Amnestic (A) and memory Retrieval Deficit (R). | [CSV file](http://socr-dev.nursing.umich.edu:3000/datasets/AlzheimerNeuroimagingData.csv) | [SOCR Data description page](http://www.stat.ucla.edu/~dinov/courses_students.dir/04/Spring/Stat233.dir/HWs.dir/AD_NeuroPsychImagingData1.html)
+
+**Ranking, Revenues and Profits of the Top Fortune500 Companies (1955-2008)** - These data represent the ranking, profitability and income of the larger US companies included in the Fortune500 classification. The SOCR Motion Chart may be used to generate dynamic graphical plots of the ranking, profitability and income of the top Fortune500 companies. | [CSV file](http://socr-dev.nursing.umich.edu:3000/datasets/Fortune500.csv) | [SOCR Data description page](http://wiki.socr.umich.edu/index.php/SOCR_Data_Fortune500_1955_2008)
+
+**Neuroimaging Study of Super-resolution Image Enhancing** - Neuroimaging MRI data from asymptomatic subjects was acquired to develop a structural brain atlas (Shattuck, et al., 2008) [8]. The raw data was processed in two different ways to test a research hypothesis that super-resolution image enhancement would improve automated volume parcellation. Thus, an automated volume parcelation (Tu, et al., 2008) [9] was applied first to the raw data and then to the super-resolved enhanced volumes (Marquina and Osher, 2007) [10]. Two measures of quality of the automated volume parsing were used -- sensitivity and specificity.
+Finally the results of the Sensitivity and Specificity measures were compared for the two analysis protocols -- applying the auto-volume parser directly to the native data (Standard method) and preprocesisng the native data with super-resolution enhancement (Super-Resolved) before using hte automated volume parser. Of interest was whether the second protocol (supre-resolved analysis) would produce more reliable, consistent and accurate automated volume tesselations, compared to the first protocol (standard method) where a super-resolution preprocessing was not applied. | [CSV file](http://socr-dev.nursing.umich.edu:3000/datasets/NeuroimagingStudyofSuperResolutionImageEnhancing.csv) | [SOCR Data description page](http://wiki.socr.umich.edu/index.php/SOCR_Data_June2008_ID_NI)
+
+**Normal and Schizophrenia Neuroimaging study of Children** - This is a neuroimaging study of childhood-onset schizophrenia. It uses automated volumetric data processing to obtain different volume measures of local anatomy for schizophrenia patients and age-matched normal controls. The goals of the study were to identify associations and relationships between neuroimaging biomarkers and various subject demographics and traits. | [CSV file](http://socr-dev.nursing.umich.edu:3000/datasets/SchizophreniaNeuroimaging.csv) | [SOCR Data description page](http://wiki.socr.umich.edu/index.php/SOCR_Data_Oct2009_ID_NI)
+
+**Predictive Big Data Analytics, Modeling, Analysis and Visualization of Clinical, Genetic and Imaging Data for Parkinson’s Disease** - This case-study uses simulation to examine associations between clinical, demographic, imaging and genetics variables for Parkinson’s disease. This is an example of Big Data for investigating important neurodegenerative disorders. | [CSV file](http://socr-dev.nursing.umich.edu:3000/datasets/BiomedBigMetadata.csv) | [SOCR Data description page](http://wiki.socr.umich.edu/index.php/SOCR_Data_PD_BiomedBigMetadata)
+
+**SOCR Heart Attack Data** - These data include information on Heart Attack Patients discharged from all of the hospitals in New York State in 1993, where the admitting diagnosis was an Acute Myocardial Infarction (AMI), also called a heart attack, who did not have surgery. There are 12,844 cases. | [CSV file](http://socr-dev.nursing.umich.edu:3000/datasets/HeartAttacks.csv) | [SOCR Data description page](http://wiki.socr.umich.edu/index.php/SOCR_Data_AMI_NY_1993_HeartAttacks)
+
 [1] Lichman, M. (2013). [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml). Irvine, CA: University of California, School of Information and Computer Science.
 
 [2] SOCR Data KneePainData 041409. http://wiki.socr.umich.edu/index.php/SOCR_Data_KneePainData_041409
@@ -83,3 +96,9 @@ To be able to use any dataset locally for testing, download CSV file from the pr
 [6] Jarron M. Saint Onge, Richard G. Rogers, Patrick M. Krueger. (2008) Major League Baseball Players' Life Expectancies, Southwestern Social Science Association, Volume 89, Issue 3, pages 817–830, DOI: 10.1111/j.1540-6237.2008.00562.x.
 
 [7] 25,000 records of adolescent height and weight. http://wiki.socr.umich.edu/index.php/SOCR_Data_Dinov_020108_HeightsWeights
+
+[8] Shattuck DW, Mirza M, Adisetiyo V, Hojatkashani C, Salamon G, Narr KL, Poldrack RA, Bilder RM, Toga AW (2008) Construction of a 3D Probabilistic Atlas of Human Cortical Structures. NeuroImage, doi: 10.1016/j.neuroimage.2007.09.031.
+
+[9] Tu, Z., Narr, K. L., Dinov, I., Dollar, P., Thompson, P. M., & Toga, A. W. (2008). Brain Anatomical Structure Segmentation by Hybrid Discriminative/Generative Models. IEEE Transactions on Medical Imaging. (in press).
+
+[10] Marquina, A. and Osher, SJ. Image super-resolution by TV-regularization, UCLA CAM Report 2007-18), July 2007.
