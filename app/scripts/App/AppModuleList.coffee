@@ -47,7 +47,8 @@ module.exports = class AppModuleList
 <<<<<<< HEAD
       require 'scripts/analysis/tools/PowerCalc/PowerCalc.module.coffee'
 =======
-
+      require 'scripts/analysis/tools/MyModule/MyModule.module.coffee'
+>>>>>>> feat(App):add mymodule to app
     ]
   ]
 
