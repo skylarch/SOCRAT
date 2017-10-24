@@ -25,7 +25,8 @@ module.exports = class PowerCalcSidebarCtrl extends BaseCtrl
 		'Generic chi-square test',
 		'Power of a Simple Poisson Test',
 		'Two-sample t test (general case)',
-		'One-Sample (or Paired) t Test',]
+		'One-Sample (or Paired) t Test',
+    'Pilot',]
 		@selectedAlgorithm = @algorithms[3]
 
 		# set up data and algorithm-agnostic controls
@@ -253,7 +254,7 @@ module.exports = class PowerCalcSidebarCtrl extends BaseCtrl
 			if @threshMode then size = @runThresh(@df.data, index, -1, false)[0]
 			else size = @df.data.length
 
-		else 
+		else
 			# update comparison target
 			if not @equalList([@curTarget], [@chosenSubCatsOne])
 				@curTarget = @chosenSubCatsOne
@@ -279,13 +280,13 @@ module.exports = class PowerCalcSidebarCtrl extends BaseCtrl
 		if @newTarget
 			@newTarget = false
 			@MinMax = [
-				{"min": Number.MAX_SAFE_INTEGER, "max": Number.MIN_SAFE_INTEGER}, 
+				{"min": Number.MAX_SAFE_INTEGER, "max": Number.MIN_SAFE_INTEGER},
 				{"min": Number.MAX_SAFE_INTEGER, "max": Number.MIN_SAFE_INTEGER}
 			]
 			if isTwo
 				# TODO
 				return
-			else 
+			else
 				for row in data
 					i = parseFloat(row[index1])
 					if i < @MinMax[0]["min"]
@@ -358,9 +359,18 @@ module.exports = class PowerCalcSidebarCtrl extends BaseCtrl
 		if (a.length isnt b.length) then return false
 		i = 0
 		for item in a
-			if b[0] isnt item then return false
+			if b[i] isnt item then return false #shouldn't 'b[0]' be 'b[i]'?
 			i+=1
 		return true
+
+  # pilot study function for sample size
+  # given confidence and probability, return sample size
+  # TO DO: broadcasting
+  pilot:(confidence, probability)->
+    n = Math.log(1-confidence) / Math.log(1-probability)
+    console.log(n)
+    return [n]
+
 
 
 
