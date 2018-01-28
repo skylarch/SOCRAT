@@ -25,6 +25,7 @@ require 'angular-sanitize'
 require 'angular-cookies'
 require 'angular-resource'
 require 'styles/app.less'
+require 'd3'
 
 # TODO: consider relocating to Charts
 require("expose?vg!vega")
@@ -33,6 +34,7 @@ require 'vega-embed/vega-embed.js'
 require 'compassql'
 
 # create app-level modules
+angular.module 'app_services', []
 angular.module 'app_controllers', []
 angular.module 'app_directives', []
 
